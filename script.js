@@ -22,7 +22,7 @@ map.on('load', () => {
         'type': 'line', // Type of layer (line)
         'source': 'network-data', // Source of the layer data
         'paint': {
-            'line-color': '#62a6f8', // Color of the lines
+            'line-color': '#2f7dca', // Color of the lines
             'line-width': 3, // Width of the lines
             'line-opacity': 1 // Opacity of the lines
         }
