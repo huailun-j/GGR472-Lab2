@@ -4,7 +4,7 @@
 ### 🌟 Project Overview
 This web page is designed to help cyclists in Toronto easily locate safe cycling routes and bicycle parking racks across the city. By visualizing this data, the web aims to promote cycling as a sustainable, healthy, and efficient mode of transportation, reducing car dependency and contributing to a greener urban environment. And encourage people using bicycles.
 
-### Purpose
+### 🌍 Purpose
 The webpage aims to provide cyclists with the tools to navigate the Toronto city safely. Also, it encourages residents to embrace cycling as a good tool of transportation. Let's make Toronto a better place to live! 🚲💨
 
 
