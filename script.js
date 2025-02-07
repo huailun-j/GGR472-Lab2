@@ -9,41 +9,41 @@ const map = new mapboxgl.Map({
 
 
 map.on('load', () => {
-    //add the first data source containing cycling network GeoJSON data
+    //add data source from GeoJSON data, about the cycling network data
     map.addSource('network-data', {
         type: 'geojson',
-        data: 'https://huaijun-j.github.io/GGR472-Lab2/cycling-network.geojson' 
-
+        data: 'https://raw.githubusercontent.com/huailun.j/GGR472-Lab2/main/cycling-network.geojson' 
+     
     });
 
-     // Add a layer to display the cycling network lines
+     // Add a layer to show the cycling network lines
      map.addLayer({
-        'id': 'network-line', // Unique ID for the layer
-        'type': 'line', // Type of layer (line)
-        'source': 'network-data', // Source of the layer data
+        'id': 'network-line', 
+        'type': 'line', 
+        'source': 'network-data', 
         'paint': {
-            'line-color': '#2f7dca', // Color of the lines
-            'line-width': 3, // Width of the lines
-            'line-opacity': 1 // Opacity of the lines
+            'line-color': '#2f7dca', 
+            'line-width': 3, 
+            'line-opacity': 1 
         }
     });
     
 
-    //add the second data source containing parking racks GeoJSON data
+    //add another data source from GeoJSON data, which is the bicycle parking racks 
     map.addSource('parking-data', {
         type: 'geojson',
-        data: 'SHOULD A LINK HERE' 
+        data: 'https://raw.githubusercontent.com/huailun.j/GGR472-Lab2/main/Bicycle-Parking-Racks-Data.geojson' 
 
     });
-    // Add a layer to display the parking rack points
+    // Add a layer for bicycle parking rack, points
     map.addLayer({
-        'id': 'parking-point', // Unique ID for the layer
-        'type':'circle', // Type of layer (point)
-        'source': 'parking-data', // Source of the layer data
+        'id': 'parking-point', 
+        'type':'circle', 
+        'source': 'parking-data', 
         'paint': {
-            'circle-color': '#f014ae', // Color of the circles
-            'circle-opacity': 0.1, // Opacity of the circles
-            'circle-radius': 10 // Radius of the circles
+            'circle-color': '#f014ae', 
+            'circle-opacity': 0.1, 
+            'circle-radius': 10 
         }
         
     });
