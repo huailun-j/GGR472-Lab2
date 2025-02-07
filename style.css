@@ -28,11 +28,31 @@ body, html {
     background-color: #f0f0f0;  /* Light gray on hover */
 }
 
+/* Image Section Styling */
+.image-section {
+    margin-top: 56px;  /* Space for navbar */
+    position: relative;
+}
+
+.header-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-title {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 24px;
+}
+
 /* Map Container Styling */
 .map-container {
-    position: absolute;
-    top: 56px;  /* Pushes the map down below the navbar */
-    bottom: 0;
     width: 100%;
-    height: calc(100% - 56px);  /* Adjust the map height to fit below the navbar */
+    height: calc(100vh - 56px - 300px);  /* Adjust map height to fit below the image */
 }
