@@ -24,7 +24,7 @@ map.on('load', () => {
         'paint': {
             'line-color': '#62a6f8', // Color of the lines
             'line-width': 3, // Width of the lines
-            'line-opacity': 0.8 // Opacity of the lines
+            'line-opacity': 1 // Opacity of the lines
         }
     });
     
@@ -32,7 +32,7 @@ map.on('load', () => {
     //add the second data source containing parking racks GeoJSON data
     map.addSource('parking-data', {
         type: 'geojson',
-        data: 'https:///MissyZhang.github.io/GGR472-lab2/data/Bicycle%20Parking%20Racks%20Data.geojson' 
+        data: 'SHOULD A LINK HERE' 
 
     });
     // Add a layer to display the parking rack points
