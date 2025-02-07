@@ -1,7 +1,38 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #ffffff;  /* White background for visibility */
+    border-bottom: 1px solid #ddd;  /* Light border for separation */
+    position: fixed;  /* Keep navbar at the top */
+    width: 100%;
+    z-index: 1000;  /* Ensure navbar stays above the map */
+    top: 0;
+    left: 0;
+    height: 56px;  /* Standard navbar height */
+}
+
+/* Ensure navbar links are visible */
+.navbar a {
+    color: #000000;  /* Black text */
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #f0f0f0;  /* Light gray on hover */
+}
+
+/* Map Container Styling */
 .map-container {
     position: absolute;
-    top: 0;
+    top: 56px;  /* Pushes the map down below the navbar */
     bottom: 0;
     width: 100%;
-    }
-    
+    height: calc(100% - 56px);  /* Adjust the map height to fit below the navbar */
+}

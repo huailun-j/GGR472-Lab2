@@ -12,7 +12,7 @@ map.on('load', () => {
     //add data source from GeoJSON data, about the cycling network data
     map.addSource('network-data', {
         type: 'geojson',
-        data: 'https://raw.githubusercontent.com/huailun.j/GGR472-Lab2/main/cycling-network.geojson' 
+        data: 'https://huailun-j.github.io/GGR472-Lab2/Data/cycling-network.geojson' 
      
     });
 
@@ -32,7 +32,7 @@ map.on('load', () => {
     //add another data source from GeoJSON data, which is the bicycle parking racks 
     map.addSource('parking-data', {
         type: 'geojson',
-        data: 'https://raw.githubusercontent.com/huailun.j/GGR472-Lab2/main/Bicycle-Parking-Racks-Data.geojson' 
+        data: 'https://huailun-j.github.io/GGR472-Lab2/Data/Bicycle-Parking-Racks-Data.geojson' 
 
     });
     // Add a layer for bicycle parking rack, points
@@ -51,43 +51,3 @@ map.on('load', () => {
     
 });
 
-
-
-
-map.on('load', () => {
-    
-    // Add a data source containing GeoJSON data
-    map.addSource('cyclying-network', {
-        type: 'geojson',
-        data: {
-            "type": "FeatureCollection",
-            "features": [
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Sidney Smith Hall"
-                    },
-                    "geometry": {
-                        "coordinates": [
-                            -79.39865237301687,
-                            43.662343395037766
-                        ],
-                        "type": "Point"
-                    }
-                }
-            ]
-        }
-    });
-    
-    map.addLayer({
-        'id': 'uoft-pnt',
-        'type': 'circle',
-        'source': 'uoft-data',
-        'paint': {
-            'circle-radius': 6,
-            'circle-color': '#B42222'
-        }
-    
-    });
-
-});
