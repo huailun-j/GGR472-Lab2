@@ -8,16 +8,16 @@ body, html {
 /* Navbar Styling */
 .navbar {
     background-color: #ffffff;  
-    border-bottom: 1px solid #ddd;  /* Light border for separation */
-    position: fixed;  /* Keep navbar at the top */
+    border-bottom: 1px solid #ddd;  /* light border */
+    position: fixed;  /* keep the navbar at the top */
     width: 100%;
-    z-index: 1000;  /* Ensure navbar stays above the map, this code I asked chatgpt */
+    z-index: 1000;  /* navbar stays above the map, this code I asked chatgpt */
     top: 0;
     left: 0;
-    height: 56px;  /* Standard navbar height */
+    height: 56px;  /* navbar height, adjust for suitable */
 }
 
-/* Ensure navbar links are visible */
+/* make navbar links visible */
 .navbar a {
     color: #000000;  /* Text: Black */
     padding: 10px 15px;
@@ -25,14 +25,14 @@ body, html {
 }
 
 .navbar a:hover {
-    background-color: #f0f0f0;  /* Light gray on hover */
+    background-color: #f0f0f0;  /* light gray color on hover */
 }
 
-/* Image Section Styling */
+/* Image Styling */
 .image-section {
     position: relative;
     width: 100%;
-    height: 180px;  /* Flatter image */
+    height: 180px;  
     overflow: hidden;
 }
 
@@ -57,7 +57,7 @@ body, html {
     white-space: nowrap;  /* Prevent text from breaking into multiple lines */
 }
 
-/* Description Styling */
+/* Description/Introduction Styling */
 .description {
     max-width: 90%;
     margin: 20px auto;

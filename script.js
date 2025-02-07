@@ -4,19 +4,19 @@ const map = new mapboxgl.Map({
     container: 'my-map', // map container ID
     style: 'mapbox://styles/huailun/cm6u8eo2k001p01s3bta5ehol', // style URL
     center: [-79.39, 43.73], // starting position [lng, lat], change this for centred map
-    zoom: 10, // starting zoom level
+    zoom: 10, // starting zoom level, adjust to a suitable size
 });
 
 
 map.on('load', () => {
-    //add data source from GeoJSON data, about the cycling network data
+    //add data source from GeoJSON data, this is about the cycling network data
     map.addSource('network-data', {
         type: 'geojson',
         data: 'https://huailun-j.github.io/GGR472-Lab2/Data/cycling-network.geojson' 
      
     });
 
-     // Add a layer to show the cycling network lines
+     // Add a layer to show the cycling network lines, matched with mapbox
      map.addLayer({
         'id': 'network-line', 
         'type': 'line', 
@@ -35,7 +35,7 @@ map.on('load', () => {
         data: 'https://huailun-j.github.io/GGR472-Lab2/Data/Bicycle-Parking-Racks-Data.geojson' 
 
     });
-    // Add a layer for bicycle parking rack, points
+    // Add a layer for bicycle parking rack, points, matched with mapbox
     map.addLayer({
         'id': 'parking-point', 
         'type':'circle', 
