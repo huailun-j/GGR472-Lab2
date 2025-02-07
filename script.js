@@ -12,7 +12,7 @@ map.on('load', () => {
     //add the first data source containing cycling network GeoJSON data
     map.addSource('network-data', {
         type: 'geojson',
-        data: 'https://huaijun-j.github.io/GGR472-Lab2/data/cycling-network.geojson' 
+        data: 'https://huaijun-j.github.io/GGR472-Lab2/cycling-network.geojson' 
 
     });
 
@@ -41,9 +41,9 @@ map.on('load', () => {
         'type':'circle', // Type of layer (point)
         'source': 'parking-data', // Source of the layer data
         'paint': {
-            'circle-color': '#fdf6ba', // Color of the circles
-            'circle-opacity': 0.8, // Opacity of the circles
-            'circle-radius': 5 // Radius of the circles
+            'circle-color': '#f014ae', // Color of the circles
+            'circle-opacity': 0.1, // Opacity of the circles
+            'circle-radius': 10 // Radius of the circles
         }
         
     });
