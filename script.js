@@ -18,13 +18,13 @@ map.on('load', () => {
 
      // Add a layer to show the cycling network lines, matched with mapbox
      map.addLayer({
-        'id': 'network-line', 
-        'type': 'line', 
-        'source': 'network-data', 
+        'id': 'network-line', // Unique ID for the layer
+        'type': 'line', // Type of layer, line
+        'source': 'network-data', // Source of the layer data
         'paint': {
-            'line-color': '#2f7dca', 
-            'line-width': 3, 
-            'line-opacity': 1 
+            'line-color': '#2f7dca', // lines color
+            'line-width': 3, //width of the lines
+            'line-opacity': 1 //Opacity of the lines
         }
     });
     
@@ -43,7 +43,7 @@ map.on('load', () => {
         'paint': {
             'circle-color': '#f014ae', 
             'circle-opacity': 0.1, 
-            'circle-radius': 10 
+            'circle-radius': 10 // Radius of the circles
         }
         
     });
