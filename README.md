@@ -21,3 +21,4 @@ Two datas for this webpage were sourced from Toronto's Open Data Portal:
 
 - Point Feature: [Bicycle Parking Racks](https://open.toronto.ca/dataset/bicycle-parking-racks/)
 - Line Feature: [Cycling Network Data](https://open.toronto.ca/dataset/cycling-network/)
+- Polygon Feature: [City Wards](https://open.toronto.ca/dataset/city-wards/)
